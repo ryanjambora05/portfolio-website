@@ -1,0 +1,117 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ryan Jambora — Portfolio</title>
+  <meta name="description" content="Personal portfolio showcasing projects, skills and contact information." />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#"><h1>PORTFOLIO</h1></a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#skills">Skills</a>
+        <a href="https://www.facebook.com/ryan.jambora.9" target="_blank">Facebook</a>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </div>
+  </header>
+  <section class="container">
+   <div class="container-photo">
+          <img src="Screenshot 2025-11-28 090800.png" style="width:200px; height:200px; object-fit:cover;"alt="Ryan Jambora" class="square-img">
+          <div class="hero-text">
+          <h1>Hi-I'm <span class="accent">Ryan</span></h1>
+           <p class="lead">I build clean, responsive websites and simple web apps. I care about readability, accessibility and delightful.</p>
+          <a class="btn" href="#projects">See my work</a>
+        </div>
+        </div>
+        
+        </section>
+
+  
+  <main>
+  
+    <section id="projects" class="container projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>Simple Calculator</p>
+          <div class="card-links">
+            <p><strong>Tools Used:</strong> C Programming, CodeBlocks IDE</p>
+            <a href="Screenshot 2025-12-12 114433.png" target="_blank"><img src="Screenshot 2025-12-12 114433.png" style="width:200px; height:200px; object-fit:cover;"alt="Project Screenshot" class="square-img"></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Certificate of HTML</p>
+          <div class="card-links">
+            <p><strong>Tools Used:</strong> SoloLearn (HTML Course)</p>
+            <a href="Introduction to HTML_certificate.jpg" target="_blank"><img src="Introduction to HTML_certificate.jpg" alt="Certificate" class="avatar-img"></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>Certificate of CSS</p>
+          <div class="card-links">
+            <p><strong>Tools Used:</strong> MS Word, Canva</p>
+            <a href="Introduction to CSS_certificate.jpg" target="_blank"><img src="Introduction to CSS_certificate.jpg" alt="Certificate" class="avatar-img"></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About me</h2>
+      <p>I’m Ryan Jambora, a web development student from Caraga State University. I enjoy building responsive interfaces, learning new technologies, and improving my coding skills every day.</p>
+      <ul class="skills">
+        <li>HTML & CSS</li>
+        <li>Responsive Design</li>
+      </ul>
+      <p>You can also connect with me on Facebook here:
+        <a href="https://www.facebook.com/ryan.jambora.9" target="_blank" style="color: var(--accent-2); font-weight:600;">@Ryan Jambora</a>
+      </p>
+
+      <h2 id="skills">Skills</h2>
+      <p>Proficiency in Programming Languages</p>
+      <p>Organization and Time Management</p>
+      
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>If you'd like to work together or want to say hi, drop a message.</p>
+      <form class="contact-form" action="#" onsubmit="return false;">
+        <div class="field-row">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <textarea name="message" rows="6" placeholder="Message"></textarea>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2025</span> Ryan Jambora</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function(){
+      document.querySelector('.nav').classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
